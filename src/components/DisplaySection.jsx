@@ -1,6 +1,11 @@
 import React from 'react'
 
-const DisplaySection = () => {
+function DisplaySection({triggerPreview}) {
+
+    const handleScrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
   return (
     <div className='display-section wrapper'>
       <h2 className="title">New</h2>
@@ -8,8 +13,8 @@ const DisplaySection = () => {
       <span className="description">
         A display that's up to 2x brighter in sun
       </span>
-      <button className="button">Try me!</button>
-      <button className="back-button">TOP</button>
+      <button className="button" onClick={triggerPreview}>Try me!</button>
+      <button className="back-button" onClick={handleScrollToTop}>TOP</button>
     </div>
   )
 }

@@ -19,7 +19,7 @@ import React, {
   } from "webgi";
   import gsap from "gsap";
   import { ScrollTrigger } from "gsap/ScrollTrigger";
-  import { scrollAnimation } from "../lib/scroll.animation";
+  import { scrollAnimation } from "../lib/scroll-animation";
   
   gsap.registerPlugin(ScrollTrigger);
   
